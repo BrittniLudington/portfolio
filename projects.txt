@@ -1,0 +1,8 @@
+Riddle Quiz App
+
+	A project made for the Thinkful bootcamp. It is a quiz of ten riddles
+	the user must solve. Made using HTML and Javascript.
+
+	Link to app: https://brittniludington.github.io/QuizApp/index.html
+
+	Link to repo: https://github.com/BrittniLudington/QuizApp
