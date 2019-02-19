@@ -78,8 +78,13 @@ li
 
 .skillThumb
 {
-    max-width:50%;
-    max-height: auto;
+    width:100px;
+    height: 100px;
+}
+.uniqueSkill
+{
+    vertical-align: bottom;
+    margin:2%;
 }
 
 /**************************************************************/
