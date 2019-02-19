@@ -123,3 +123,14 @@ footer
     background-color:lightgrey;
     padding:2%;
 }
+
+/**********************************************************/
+
+@media only screen and (max-width:350px)
+{
+    #navLinks
+    {
+        padding:0;
+        text-align:center;
+    }
+}
