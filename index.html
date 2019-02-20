@@ -3,25 +3,32 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio greyFrame</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
         <meta name="description" content="wire frame of my Portfolio">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
             <nav>
-                <ul id = "navLinks">
-                    <li>About me</li>
-                    <li>Skills</li>
-                    <li>projects</li>
-                    <li>contact</li>
+                <ul id = "navLinks" class = "merriweather">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         <header role = "banner" id="banner">
-            <button type="button" id="contactButton">Contact Me</button>
+            <div id="slogan">
+            <h2 class="merriweather sloganLetter" id="clean">Clean</h2>
+            <h2 class="merriweather sloganLetter" id="and">and</h2>
+            <h2 class="merriweather sloganLetter" id="easy">Easy</h2>
+            <h2 class="merriweather sloganLetter" id="code">Code</h2>
+            </div>
         </header>
         
         <section role = "about-me" id = "about">
-            <h1>About Me</h1>
-            <p id="bio">My name is Brittni, I am a front-end and object oriented programmer.
+            <h1 class = "merriweather">About Me</h1>
+            <p id="bio" class="sansserif">My name is Brittni, I am a front-end and object oriented programmer.
 
 
 
@@ -38,8 +45,8 @@
             </figure>
         </section>
         <section role = "skills" id = "skills">
-            <h1>Skills</h1>
-            <div id = "skills-table">
+            <h1 class = "merriweather">Skills</h1>
+            <div id = "skills-table" class="sansserif">
                 <container class = "uniqueSkill">
                     <img class = "skillThumb" src="images/thumbnails/html5.png">
                     <p>HTML5</p>
@@ -66,10 +73,12 @@
                 </container>
             </div>
         </section>
-        <section role = "projects">
-            <h1>Projects</h1>
-            <article>
-                <img class = "thumbnail" src = "images/project-images/quiz-app-small.PNG">
+        <section role = "projects" id="projects">
+            <h1 class="merriweather">Projects</h1>
+            <article class="sansserif">
+                <div class="imageHolder">
+                    <img class = "thumbnail" src = "images/project-images/quiz-app-small.PNG">
+                </div>
                 <div class = "project-contents">
                     <h2>Riddle Quiz App</h2>
                     <p>A project made for the Thinkful bootcamp. It is a quiz of ten riddles
@@ -79,7 +88,9 @@
                 </div>
             </article>
             <article>
-                <img class = "thumbnail" src = "images/project-images/time-catcher.PNG">
+                <div class="imageHolder">
+                    <img class = "thumbnail" src = "images/project-images/time-catcher.PNG">
+                </div>
                 <div class = "project-contents">
                     <h2>Time Catcher</h2>
                     <p>Project made for the API capstone in Thinkful's bootcamp. It takes a location
@@ -92,8 +103,8 @@
             </article>
         </section>
         <section role = "contact" id="contact">
-            <h1>Contact Me</h1>
-            <form id = "contact-form">
+            <h1 class="merriweather">Contact Me</h1>
+            <form id = "contact-form" class="sansserif">
                 <label for="name">Name:</label>
                 <input type="text" name="name" required>
 
@@ -110,7 +121,7 @@
             </form>
         </section>
 
-        <footer>
+        <footer class="merriweather">
             2019 Brittni Ludington
         </footer>
     </body>

@@ -1,6 +1,17 @@
 body
 {
     text-align: center;
+    background-color:#e5c892;
+}
+
+.merriweather
+{
+    font-family: 'Merriweather', serif;
+}
+
+.sansserif
+{
+    font-family: sans-serif;
 }
 
 nav
@@ -24,10 +35,43 @@ nav
 li
 {
     display:inline;
-    background-color:lightgray;
     font-size:15pt;
     padding-left:5px;
     padding-right:5px;
+    background-color:#e5c892;
+    border-radius:5px;
+}
+
+a
+{
+    text-decoration: none;
+    background-color:#e5c892;
+
+}
+
+li:hover
+{
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce
+{
+    0%
+    {
+        font-size:15pt;
+    }
+
+    50%
+    {
+        font-size:17pt;
+        background-color: #e8793e;
+
+    }
+
+    100%
+    {
+        font-size:15pt;
+    }
 }
 
 /*********************************************************/
@@ -35,17 +79,71 @@ li
 #banner
 {
     width:100%;
+    height:auto;
     background-image:url("images/honeycomb-banner.jpg");
     background-position: center;
     background-color:lightgrey;
 
-    padding:12% 0;
+    padding:20% 0;
     text-align: center;
 }
-#contactButton
+
+#slogan
 {
-    margin-top:10%;
-    font-size:20pt;
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+}
+
+#slogan:hover
+{
+    cursor:default;
+}
+
+.sloganLetter
+{
+
+    font-size:40px;
+    font-family: 'Laila', serif;
+    animation: bounceSlogan 2s infinite;
+    display:inline;
+}
+
+#clean
+{
+    animation-delay: 0s;
+}
+#and
+{
+    animation-delay:0.2s;
+}
+#easy
+{
+    animation-delay: 0.4s;
+}
+#code
+{
+    animation-delay:0.6s;
+}
+
+@keyframes bounceSlogan
+{
+    0%
+    {
+        font-size:40px;
+    }
+
+    50%
+    {
+        font-size:42px;
+    }
+
+    100%
+    {
+        font-size:40px;
+    }
 }
 
 /**********************************************************/
@@ -55,7 +153,6 @@ li
     width:50%;
     height:auto;
     text-align:left;
-    font-family: sans-serif;
 }
 #imageMe
 {
@@ -89,7 +186,6 @@ li
 .uniqueSkill
 {
     vertical-align: bottom;
-    font-family:sans-serif;
     margin:2%;
     background-color:#eabc8a;
     border-radius:25px;
@@ -99,30 +195,41 @@ li
 
 article
 {
-    font-family:sans-serif;
-    width: 90%;
+    width: 80%;
     height: auto;
     text-align:left;
     border: 1px solid black;
-    margin-left:5%;
-    margin-bottom:5%;
+    margin:auto;
     padding:0;
+    margin-bottom: 2%;
 }
 
 .thumbnail
 {
-    max-width:20%;
-    max-height: auto;
-    display:inline-block;
+    max-width:100%;
+    max-height: 100%;
+   /* display:inline-block;*/
     vertical-align: top;
     opacity: 1.0;
+}
+
+.imageHolder
+{
+    background-color:black;
+    max-width:20%;
+
+    margin-right:2%;
+    padding:0;
+    display:inline-block;
 }
 
 .project-contents
 {
     display:inline-block;
-    width:50%;
+    width:70%;
+    height:auto;
     vertical-align: top;
+    margin:0;
 }
 
 .thumbnail:hover
@@ -152,13 +259,14 @@ footer
     display:flex;
     flex-direction: column;
     margin:auto;
-    font-family: sans-serif;
     line-height: 20pt;
 }
 
 #submit-button
 {
     width:25%;
+    height:auto;
+    font-size:15pt;
     margin-top: 2%;
 }
 
@@ -169,5 +277,78 @@ footer
     {
         padding:0;
         text-align:center;
+    }
+
+}
+
+@media only screen and (max-width:420px)
+{
+    .sloganLetter
+    {
+
+        font-size:20px;
+        font-family: 'Laila', serif;
+        animation: bounceSlogan 2s infinite;
+        display:inline;
+    }
+
+    #clean
+    {
+        animation-delay: 0s;
+    }
+    #and
+    {
+        animation-delay:0.2s;
+    }
+    #easy
+    {
+        animation-delay: 0.4s;
+    }
+    #code
+    {
+        animation-delay:0.6s;
+    }
+
+    @keyframes bounceSlogan
+    {
+        0%
+        {
+            font-size:20px;
+        }
+
+        50%
+        {
+            font-size:22px;
+        }
+
+        100%
+        {
+            font-size:20px;
+        }
+    }
+}
+
+@media only screen and (max-width:620px)
+{
+    #submit-button
+    {
+        width:50%;
+    }
+}
+
+
+@media only screen and (max-width:830px)
+{
+    .project-contents
+    {
+        width:100%;
+    }
+    article
+    {
+        text-align: center;
+    }
+    .imageHolder
+    {
+        max-width:30%;
     }
 }
