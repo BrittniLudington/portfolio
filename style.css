@@ -10,7 +10,7 @@ nav
     left:0;
     width:100%;
     height:10%;
-    background-color:grey;
+    background-color:#632d3a;
 }
 
 #navLinks
@@ -54,6 +54,8 @@ li
     display:inline-block;
     width:50%;
     height:auto;
+    text-align:left;
+    font-family: sans-serif;
 }
 #imageMe
 {
@@ -66,7 +68,10 @@ li
 /***********************************************************/
 #skills
 {
-    background-color:lightgrey;
+    background-color: #e8793e;
+    width:80%;
+    margin:auto;
+    border-radius: 25px;
 }
 
 #skills-table
@@ -84,13 +89,17 @@ li
 .uniqueSkill
 {
     vertical-align: bottom;
+    font-family:sans-serif;
     margin:2%;
+    background-color:#eabc8a;
+    border-radius:25px;
 }
 
 /**************************************************************/
 
 article
 {
+    font-family:sans-serif;
     width: 90%;
     height: auto;
     text-align:left;
@@ -106,7 +115,7 @@ article
     max-height: auto;
     display:inline-block;
     vertical-align: top;
-
+    opacity: 1.0;
 }
 
 .project-contents
@@ -116,16 +125,44 @@ article
     vertical-align: top;
 }
 
+.thumbnail:hover
+{
+    opacity: 0.5;
+    background-color:black;
+}
+
+
 /**********************************************************/
 
 footer
 {
-    background-color:lightgrey;
+    background-color:#632d3a;
     padding:2%;
 }
 
 /**********************************************************/
+#contact
+{
+    margin-bottom: 5%;
+}
+#contact-form
+{
+    text-align:left;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    font-family: sans-serif;
+    line-height: 20pt;
+}
 
+#submit-button
+{
+    width:25%;
+    margin-top: 2%;
+}
+
+/**********************************************************/
 @media only screen and (max-width:350px)
 {
     #navLinks
