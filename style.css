@@ -22,6 +22,7 @@ nav
     width:100%;
     height:10%;
     background-color:#632d3a;
+    z-index: 3;
 }
 
 #navLinks
@@ -86,6 +87,8 @@ li:hover
 
     padding:20% 0;
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
 }
 
 #slogan
@@ -268,6 +271,13 @@ footer
     height:auto;
     font-size:15pt;
     margin-top: 2%;
+}
+
+#findMeAt img
+{
+    width: 100px;
+    height: 100px;
+    margin:5%;
 }
 
 /**********************************************************/

@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio greyFrame</title>
+        <title>Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        <script type = "module" src="js/script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
-        <meta name="description" content="wire frame of my Portfolio">
+        <meta name="description" content="my Portfolio">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -33,42 +34,43 @@
 
 
                     I am a graduate from Eastern Washington University with a Bachelor of Science
-                    in Computer Science. Currently I am enrolled in a web development bootcamp at
+                    in Computer Science. Currently I am enrolled in a web development boot camp at
                     Thinkful. My favorite aspect of coding is, when simplified, one large
                     puzzle. Nothing feels more satisfying than solving each "puzzle" in the most
                     efficient and orderly way I can.
                     
                     Besides programming, I enjoy several hobbies that involve creating art. I 
-                    spend my time drawing digital art, animating 2d animation, and beadwork. </p>
-            <figure id = "imageMe">
+                    spend my time drawing digital art, animating 2d animation, and bead work. </p>
+           <!-- <figure id = "imageMe">
                 <h2>Image of me goes here</h2>
             </figure>
+            -->
         </section>
         <section role = "skills" id = "skills">
             <h1 class = "merriweather">Skills</h1>
             <div id = "skills-table" class="sansserif">
                 <container class = "uniqueSkill">
-                    <img class = "skillThumb" src="images/thumbnails/html5.png">
+                    <img class = "skillThumb" src="images/thumbnails/html5.png" alt = "HTML5 logo">
                     <p>HTML5</p>
                 </container>
                 <container class = "uniqueSkill">
-                    <img class = "skillThumb" src="images/thumbnails/javascript.png">
+                    <img class = "skillThumb" src="images/thumbnails/javascript.png" alt = "Javascript log">
                     <p>JavaScript</p>
                 </container>
                 <container class = "uniqueSkill">
-                    <img class = "skillThumb" src="images/thumbnails/github.png">
+                    <img class = "skillThumb" src="images/thumbnails/github.png" alt = "Github logo">
                     <p>Github</p>
                 </container>
                 <container class = "uniqueSkill">
-                    <img class = "skillThumb" src="images/thumbnails/java.png">
+                    <img class = "skillThumb" src="images/thumbnails/java.png" alt = "Java logo">
                     <p>Java</p>
                 </container>
                 <container class = "uniqueSkill">
-                    <img class = "skillThumb" src="images/thumbnails/csharp.jpg">
+                    <img class = "skillThumb" src="images/thumbnails/csharp.jpg" alt = "C# logo">
                     <p>C#</p>
                 </container>
                 <container class = "uniqueSkill">
-                    <img class = "skillThumb" src="images/thumbnails/ccode.png">
+                    <img class = "skillThumb" src="images/thumbnails/ccode.png" alt="C logo">
                     <p>C</p>
                 </container>
             </div>
@@ -77,23 +79,23 @@
             <h1 class="merriweather">Projects</h1>
             <article class="sansserif">
                 <div class="imageHolder">
-                    <img class = "thumbnail" src = "images/project-images/quiz-app-small.PNG">
+                    <img class = "thumbnail" src = "images/project-images/quiz-app-small.PNG" alt="photo of riddle quiz app">
                 </div>
                 <div class = "project-contents">
                     <h2>Riddle Quiz App</h2>
-                    <p>A project made for the Thinkful bootcamp. It is a quiz of ten riddles
+                    <p>A project made for the Thinkful boot camp. It is a quiz of ten riddles
                             the user must solve. Made using HTML and Javascript.</p>
                     <a href="https://brittniludington.github.io/QuizApp/index.html">Demo</a>
                     <a href="https://github.com/BrittniLudington/QuizApp">Repository</a>
                 </div>
             </article>
-            <article>
+            <article class="sansserif">
                 <div class="imageHolder">
-                    <img class = "thumbnail" src = "images/project-images/time-catcher.PNG">
+                    <img class = "thumbnail" src = "images/project-images/time-catcher.PNG" alt="photo of time catcher">
                 </div>
                 <div class = "project-contents">
                     <h2>Time Catcher</h2>
-                    <p>Project made for the API capstone in Thinkful's bootcamp. It takes a location
+                    <p>Project made for the API capstone in Thinkful's boot camp. It takes a location
                         and places each unit of current time inside a game. The goal is to find
                         the seconds, minutes, and hours as fast as possible. Made using HTML, JQuery, and Javascript.
                     </p>
@@ -119,6 +121,14 @@
                 <input type = "submit" id="submit-button" value = "submit">
 
             </form>
+            <div id="findMeAt">
+                <a href="https://github.com/BrittniLudington" target="_blank">
+                    <img src="images/thumbnails/github.png" alt="My Github">
+                </a>
+                <a href="https://www.linkedin.com/in/brittni-ludington-6a5929170/" target="_blank">
+                    <img src="images/thumbnails/linkedin.png" alt="My Linkedin">
+                </a>
+            </div>
         </section>
 
         <footer class="merriweather">
