@@ -6,11 +6,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        <script type = "module" src="js/script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
         <meta name="description" content="my Portfolio">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
             <nav>
+                <h1 id="initials">BL</h1>
                 <ul id = "navLinks" class = "merriweather">
                     <li><a href="#about">About me</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -37,17 +39,19 @@
                     in Computer Science. Currently I am enrolled in a web development boot camp at
                     Thinkful. My favorite aspect of coding is, when simplified, one large
                     puzzle. Nothing feels more satisfying than solving each "puzzle" in the most
-                    efficient and orderly way I can.
+                    efficient and orderly way I can.<br /><br/>
                     
                     Besides programming, I enjoy several hobbies that involve creating art. I 
-                    spend my time drawing digital art, animating 2d animation, and bead work. </p>
+                    spend my time drawing digital art, animating 2d animation, and bead work. <br /><br />
+                    
+                    I currently live in Hillsboro Oregon and I am looking for a entry position in web development.</p>
            <!-- <figure id = "imageMe">
                 <h2>Image of me goes here</h2>
             </figure>
             -->
         </section>
         <section role = "skills" id = "skills">
-            <h1 class = "merriweather">Skills</h1>
+            <h1 class = "merriweather" id="skills-header">Skills</h1>
             <div id = "skills-table" class="sansserif">
                 <container class = "uniqueSkill">
                     <img class = "skillThumb" src="images/thumbnails/html5.png" alt = "HTML5 logo">
@@ -108,17 +112,17 @@
             <h1 class="merriweather">Contact Me</h1>
             <form id = "contact-form" class="sansserif">
                 <label for="name">Name:</label>
-                <input type="text" name="name" required>
+                <input type="text" class="input" name="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" name="email">
+                <input type="email" class="input" name="email">
 
                 <label for="subject">Subject:</label>
-                <input type="text" name="subject" required>
+                <input type="text" class="input" name="subject" required>
 
                 <label for="message">Message:</label>
                 <textarea name="message" rows="6"></textarea>
-                <input type = "submit" id="submit-button" value = "submit">
+                <input type = "submit" class="input" id="submit-button" value = "submit">
 
             </form>
             <div id="findMeAt">

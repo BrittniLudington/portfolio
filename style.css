@@ -14,6 +14,27 @@ body
     font-family: sans-serif;
 }
 
+#initials
+{
+    display:inline-block;
+    text-align:left;
+    position:fixed;
+    left:2%;
+    top:2%;
+    font-family: 'Dancing Script', cursive;
+    background-color:#e5c892;
+    height:auto;
+    border-radius:50%;
+    width:auto;
+    font-size:25pt;
+    margin:0;
+    margin-right:5px;
+}
+#initials:hover
+{
+    cursor: default;
+}
+
 nav
 {
     position:fixed;
@@ -27,9 +48,12 @@ nav
 
 #navLinks
 {
+    position:fixed;
+    right: 2%;
+    display:inline-block;
     text-align: right;
     list-style-type: none;
-    margin-right:10%;
+    margin-right:0;
     padding:0;
 }
 
@@ -45,9 +69,9 @@ li
 
 a
 {
+    color:black;
     text-decoration: none;
     background-color:#e5c892;
-
 }
 
 li:hover
@@ -65,7 +89,6 @@ li:hover
     50%
     {
         font-size:17pt;
-        background-color: #e8793e;
 
     }
 
@@ -171,7 +194,13 @@ li:hover
     background-color: #e8793e;
     width:80%;
     margin:auto;
+    height:auto;
     border-radius: 25px;
+}
+#skills-header
+{
+    margin:auto;
+    padding-top:2%;
 }
 
 #skills-table
@@ -179,6 +208,9 @@ li:hover
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width:auto;
+    justify-content: center;
+
 }
 
 .skillThumb
@@ -248,6 +280,8 @@ footer
 {
     background-color:#632d3a;
     padding:2%;
+    color:#eabc8a;
+
 }
 
 /**********************************************************/
@@ -255,10 +289,15 @@ footer
 {
     margin-bottom: 5%;
 }
+
+.input
+{
+    font-size:15pt;
+}
 #contact-form
 {
     text-align:left;
-    width:50%;
+    width:40%;
     display:flex;
     flex-direction: column;
     margin:auto;
@@ -293,6 +332,19 @@ footer
 
 @media only screen and (max-width:420px)
 {
+    #initials
+    {
+        position: relative;
+        margin-right:5px;
+    }
+    #navLinks
+    {
+        position: relative;
+    }
+    nav
+    {
+        height:auto;
+    }
     .sloganLetter
     {
 
