@@ -6,7 +6,7 @@ export const projects =
         alt: "photo of kirby's fruit run",
         name: "Kirby's Fruit Run",
         src: "images/project-images/kirby-fruit-run.png",
-        description: "Game made for Kirby Jam 2019 on itch.io"
+        description: "Game made for Kirby Jam 2019 on itch.io under my account"
     },
     {
         repo: "https://github.com/BrittniLudington/game-of-war",

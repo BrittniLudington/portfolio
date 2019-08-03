@@ -302,6 +302,9 @@ footer
 .input
 {
     font-size:15pt;
+    border-radius: 10px;
+    background-color: #e5c892;
+    border-color:black;
 }
 #contact-form
 {
@@ -319,6 +322,12 @@ footer
     height:auto;
     font-size:15pt;
     margin-top: 2%;
+}
+
+#submit-button:hover
+{
+    background-color: #632d3a;
+    color: #e5c892;
 }
 
 #findMeAt img
@@ -358,7 +367,7 @@ footer
     {
 
         font-size:20px;
-        font-family: 'Laila', serif;
+        font-family: 'Merriweather','serif';
         animation: bounceSlogan 2s infinite;
         display:inline;
     }
