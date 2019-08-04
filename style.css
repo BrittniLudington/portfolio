@@ -4,6 +4,12 @@ body
     background-color:#e5c892;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 .merriweather
 {
     font-family: 'Merriweather', serif;
@@ -280,6 +286,22 @@ article
     margin:0;
 }
 
+.projectLink
+{
+
+    background-color: #F5DAA4;
+    margin: 5px;
+    width: 30%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.projectLink:hover
+{
+    background-color:#6f2b22;
+    color: #fee662;
+}
+
 .thumbnail:hover
 {
     opacity: 0.5;
@@ -303,6 +325,17 @@ footer
 #contact
 {
     margin-bottom: 5%;
+    background-color: #F5DAA4;
+    border-radius: 10px;
+}
+
+.link
+{
+    text-decoration: none;
+    background-color: #F5DAA4;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .input
@@ -332,7 +365,7 @@ footer
 
 #submit-button:hover
 {
-    background-color: #632d3a;
+    background-color:#6f2b22;
     color: #e5c892;
 }
 
@@ -341,6 +374,8 @@ footer
     width: 100px;
     height: 100px;
     margin:5%;
+    display: inline-block;
+
 }
 
 /**********************************************************/

@@ -48,7 +48,7 @@ function renderProjects()
        let html = '<article class="sansserif"><div class="imageHolder"><img class="thumbnail" src=' + projects[i].src +
         ' alt=' + projects[i].alt + '></div> ' + 
         '<div class = "project-contents"> <h2>' + projects[i].name + '</h2><p>' + projects[i].description +  '</p>' 
-        + '<a href = ' + projects[i].demo + '>Demo</a><a href = ' + projects[i].repo + '>Repository</a><div></article>';
+        + '<a href = ' + projects[i].demo + ' ><h3 class="projectLink">Demo</h3></a><a href = ' + projects[i].repo + '><h3 class="projectLink">Repository</h3></a><div></article>';
         html = $.parseHTML(html);
         $("#projects").append(html);
    }
