@@ -5,7 +5,7 @@ export const projects =
         demo: "https://brittniludington.github.io/kirby-fruit-run/",
         alt: "photo of kirby's fruit run",
         name: "Kirby's Fruit Run",
-        src: "images/project-images/kirby-fruit-run.PNG",
+        src: "./images/project-images/kirby-fruit-run.PNG",
         description: "Game made for Kirby Jam 2019 on itch.io under my account"
     },
     {
