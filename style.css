@@ -1,6 +1,17 @@
+html
+{
+    height: 100%;
+    max-width:100%;
+    overflow-x: hidden;
+    margin:0;
+}
+
 body
 {
     text-align: center;
+    min-height: 100%;
+    min-width: 100%;
+    margin:0;
     background-color:#e5c892;
 }
 
@@ -113,7 +124,6 @@ a
     background-image:url("images/honeycomb-banner.jpg");
     background-position: center;
     background-color:lightgrey;
-
     padding:20% 0;
     text-align: center;
     border-bottom-left-radius: 10px;
@@ -278,8 +288,8 @@ li
 
 .imageHolder
 {
-    max-width:20%;
-    height: 100%;
+    
+    max-width: 50%;
     margin-right:2%;
     padding:0;
     display:inline-block;
@@ -288,7 +298,7 @@ li
 .project-contents
 {
     display:inline-block;
-    width:70%;
+    
     height:auto;
     vertical-align: top;
     margin:0;
@@ -325,6 +335,7 @@ footer
     
     padding:2%;
     color: #fee662;
+    width: 100%;
     
 
 }
@@ -470,6 +481,16 @@ footer
         width: 50%;
 
     }
+
+    #banner
+    {
+
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
 }
 
 
