@@ -454,6 +454,17 @@ footer
     }
 }
 
+@media only screen and (max-width:780px)
+{
+    #imageMe
+    {
+        display:block;
+        margin:auto;
+        width: 40%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
 
 /*
 @media only screen and (max-width:350px)
