@@ -1,9 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+}
+
 html
 {
-    height: 100%;
-    max-width:100%;
-    overflow-x: hidden;
-    margin:0;
+    width: 100%;
 }
 
 body
@@ -47,6 +53,9 @@ body
     font-size:25pt;
     margin:0;
     margin-right:5px;
+    background-color:#6f2b22;
+    border-radius: 30px;
+    padding: 5px;
 }
 #initials:hover
 {
@@ -59,7 +68,7 @@ nav
     top:0;
     left:0;
     width:100%;
-    height:10%;
+    height:5%;
     background-color:#6f2b22;
     z-index: 3;
 }
@@ -120,11 +129,10 @@ a
 #banner
 {
     width:100%;
-    height:auto;
+    height:200px;
+    line-height: 200px;
     background-image:url("images/honeycomb-banner.jpg");
     background-position: center;
-    background-color:lightgrey;
-    padding:20% 0;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px;
@@ -132,11 +140,9 @@ a
 
 #slogan
 {
-    position: absolute;
     margin-left:auto;
     margin-right:auto;
-    left:0;
-    right:0;
+    vertical-align: baseline;
 }
 
 #slogan:hover
@@ -270,7 +276,7 @@ article
 
 li
 {
-    display:inline;
+    display:inline-block;
     font-size:15pt;
     padding-left:5px;
     padding-right:5px;
@@ -289,10 +295,11 @@ li
 .imageHolder
 {
     
-    max-width: 50%;
+    max-width: 30%;
     margin-right:2%;
     padding:0;
     display:inline-block;
+    margin:0;
 }
 
 .project-contents
@@ -300,6 +307,7 @@ li
     display:inline-block;
     
     height:auto;
+    width: 60%;
     vertical-align: top;
     margin:0;
 }
@@ -323,8 +331,9 @@ li
 .thumbnail:hover
 {
     opacity: 0.5;
-    background-color:black;
 }
+
+
 
 
 /**********************************************************/
@@ -482,13 +491,7 @@ footer
 
     }
 
-    #banner
-    {
 
-        content: "";
-        clear: both;
-        display: table;
-    }
 
 
 }
@@ -504,8 +507,5 @@ footer
     {
         text-align: center;
     }
-    .imageHolder
-    {
-        max-width:30%;
-    }
+
 }
