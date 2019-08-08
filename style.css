@@ -407,6 +407,13 @@ footer
 }
 
 /**********************************************************/
+@media only screen and (max-width:370px)
+{
+    nav
+    {
+        height: 10%;
+    }
+}
 
 @media only screen and (max-width:450px)
 {
@@ -439,7 +446,15 @@ footer
             font-size:20px;
         }
     }
+
+
+    #navLinks
+    {
+        margin-left: 10%;
+    }
 }
+
+
 /*
 @media only screen and (max-width:350px)
 {
