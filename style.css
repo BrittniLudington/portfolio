@@ -407,6 +407,40 @@ footer
 }
 
 /**********************************************************/
+
+@media only screen and (max-width:450px)
+{
+
+    .sloganLetter
+    {
+        font-size: 20px;
+        animation: bounceSlogan 2s infinite;
+    }
+
+    #banner
+    {
+        height: 150px;
+    }
+
+    @keyframes bounceSlogan
+    {
+        0%
+        {
+            font-size:20px;
+        }
+
+        50%
+        {
+            font-size:22px;
+        }
+
+        100%
+        {
+            font-size:20px;
+        }
+    }
+}
+/*
 @media only screen and (max-width:350px)
 {
     #navLinks
@@ -509,3 +543,5 @@ footer
     }
 
 }
+
+*/

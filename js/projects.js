@@ -16,7 +16,7 @@ export const projects =
         alt: "photo of messenger app",
         name: "Private Messenger",
         description: "A private messaging application that lets users create accounts and send messages to specified users.",
-        technology: ["React js", "Node.js", "Javascript", "PostgreSQL","CSS"]
+        technology: ["React js", "Node.js", "PostgreSQL", "Javascript","CSS"]
     },
     {
         repo: "https://github.com/BrittniLudington/game-of-war",
@@ -24,7 +24,7 @@ export const projects =
         alt: "photo of game of war app",
         name: "Game Of War",
         src: "images/project-images/game-of-war.PNG",
-        technology:["React js", "Node.js","Javascript","PostgreSQL","CSS","Gimp"],
+        technology:["React js", "Node.js","PostgreSQL","Javascript","CSS","Gimp"],
         description: "A digital version of the card game War. It's main feature is a save system that tracks the stats of a player and the current game"
     },
     {
