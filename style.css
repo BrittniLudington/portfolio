@@ -295,7 +295,7 @@ li
 .imageHolder
 {
     
-    max-width: 30%;
+    width: 30%;
     margin-right:2%;
     padding:0;
     display:inline-block;
@@ -413,6 +413,11 @@ footer
     {
         height: 10%;
     }
+
+    article
+    {
+        overflow: hidden;
+    }
 }
 
 @media only screen and (max-width:450px)
@@ -463,6 +468,32 @@ footer
         width: 40%;
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+
+    .projectLink
+    {
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width:915px)
+{
+    article
+    {
+        text-align: center;
+    }
+
+    .projectLink
+    {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:1200px)
+{
+    .imageHolder
+    {
+        width: 287px;
     }
 }
 
