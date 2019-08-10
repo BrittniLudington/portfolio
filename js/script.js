@@ -6,7 +6,22 @@ $(document).ready(function(){
     handleSubmit();
     renderProjects();
     handleIconClick();
+    window.addEventListener("resize",handleScreenChange);
 });
+
+function handleScreenChange()
+{
+    if(screen.width > 370)
+    {
+        let navbar = document.getElementById("navLinks");
+        navbar.style.display = "inline-block";
+    }
+    else
+    {
+        let navbar = document.getElementById("navLinks");
+        navbar.style.display = "none";
+    }
+}
 
 function handleIconClick()
 {
