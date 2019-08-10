@@ -41,8 +41,8 @@ export const projects =
         alt : "photo of time catcher",
         name: "Time Catcher",
         description: "A video game that uses location and weather data. It takes a location and places each unit of current time inside a game. The goal is to find the seconds, minutes, and hours as fast as possible.",
-        repo: "https://github.com/BrittniLudington/time-and-weather-game-api-capstone",
-        demo: "https://brittniludington.github.io/time-and-weather-game-api-capstone/",
+        repo: "https://github.com/BrittniLudington/time-catcher",
+        demo: " https://brittniludington.github.io/time-catcher/",
         technology: ["Javascript","JQuery","HTML","CSS","Gimp"]
     }
 ]
