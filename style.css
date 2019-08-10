@@ -82,6 +82,7 @@ nav
     list-style-type: none;
     margin-right:0;
     padding:0;
+    margin-top: 5px;
 }
 
 #navLinks li
@@ -203,6 +204,8 @@ a
     width:50%;
     height:auto;
     text-align:left;
+    margin-top:5%;
+
 }
 #imageMe
 {
