@@ -73,6 +73,22 @@ nav
     z-index: 3;
 }
 
+#icon
+{
+    display:none;
+    width: 30px;
+    position: fixed;
+    right: 5px;
+}
+
+#icon div
+{
+    width: 30px;
+    height: 5px;
+    background-color: #fee662;
+    margin: 5px 0;
+}
+
 #navLinks
 {
     position:fixed;
@@ -412,9 +428,22 @@ footer
 /**********************************************************/
 @media only screen and (max-width:370px)
 {
-    nav
+    li
     {
-        height: 10%;
+        display:block;
+    }
+
+    #navLinks
+    {
+        display:block;
+        left: 60%;
+        text-align: left;
+        display:none;
+    }
+
+    #icon
+    {
+        display:block;
     }
 
     article

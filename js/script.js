@@ -1,10 +1,30 @@
 import {projects} from "./projects.js";
 
+
 $(document).ready(function(){
     handleNavBar();
     handleSubmit();
     renderProjects();
+    handleIconClick();
 });
+
+function handleIconClick()
+{
+    $('#icon').click(function(event)
+    {
+        event.preventDefault();
+        let navbar = document.getElementById("navLinks");
+        let style = window.getComputedStyle(navbar);
+        if(style.getPropertyValue('display') === 'none')
+        {
+            navbar.style.display = 'block';
+        }
+        else
+        {
+            navbar.style.display = 'none';
+        }
+    })
+}
 
 function handleNavBar()
 {
@@ -13,7 +33,8 @@ function handleNavBar()
         event.preventDefault();
 
         let href = $(this).attr('href');
-        document.querySelector(href).scrollIntoView({behavior:'smooth'});
+        document.querySelector(href).scrollIntoView(true);
+        scrollBy(0,-40);
     })
 }
 
