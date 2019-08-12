@@ -84,7 +84,7 @@ function renderProjects()
        let html = '<article class="sansserif"><div class="imageHolder"><img class="thumbnail" src=' + projects[i].src +
         ' alt=' + projects[i].alt + '></div> ' + 
         '<div class = "project-contents"> <h2>' + projects[i].name + '</h2><p>' + projects[i].description +  '</p>' 
-        + '<a href = ' + projects[i].demo + ' target="_blank" ><h3 class="projectLink">Demo</h3></a><a href = ' + projects[i].repo + ' target="_blank"><h3 class="projectLink">Repository</h3></a>';
+        + '<a href = ' + projects[i].demo + ' target="_blank" role="button" ><h3 class="projectLink">Demo</h3></a><a href = ' + projects[i].repo + ' target="_blank" role="button"><h3 class="projectLink">Repository</h3></a>';
         html += '<h3>Technology Used:</h3><ul>';
         for(let j = 0; j < projects[i].technology.length; j++)
         {
