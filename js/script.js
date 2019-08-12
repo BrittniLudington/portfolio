@@ -78,7 +78,6 @@ function renderProjects()
                 </div>
             </article>
     */
-   $("#projects").prepend('<h1 class="merriweather">Projects</h1>');
     for(let i = 0; i < projects.length; i++)
    {
        let html = '<article class="sansserif"><div class="imageHolder"><img class="thumbnail" src=' + projects[i].src +
